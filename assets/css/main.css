@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslateblue;
+}
+#navigation__bar {
+    background-color: darkgrey;
+}
+.nav_list_ul {
+    list-style: none;
+}
+.nav_list_ul>li {
+    display: inline;
+}
+.name{
+    
+}
+.description {
+
+} 
+.project_box {
+    background-color: deeppink;
+    margin-right: 1%;
+    border-radius: 16px;
+    padding: 3em;
+}
+.project_title {
+    font-size: 3rem;
+}
+.project_icon_wrap {
+    float: right;
+    margin-top: -0.4em;
+}
+.project_icon {
+    width: 75px;
+}
+.project_description {
+    font-size: 1.5rem;
+}
+.stack {
+    background-color: yellow;
+    width: 24%;
+    border-radius: 16px;
+    display: grid;
+}
+.stack>p {
+    text-align: center;
+}
+.stack_img {
+    width: 75px;
+    border-radius: 16px;
+    padding:1em;
+}
