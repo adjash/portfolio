@@ -7,14 +7,16 @@
 <body>
     <div class="tri">
 
-        <h1>Adam Hardie</h1>
+        <h1 id="name">Adam Hardie</h1>
 
     </div>
 
 
     <script>
         $( document ).ready(function() {
-            console.log( "ready!" );
+            $("#name").fadeIn("slow", function () {
+                console.log("fade done")
+            })
         });
     </script>
 </body>
