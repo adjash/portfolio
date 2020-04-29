@@ -14,9 +14,14 @@
 
     <script>
         $( document ).ready(function() {
-            $("#name").fadeIn("slow", function () {
+            if ($("#name")){
+                $("#name").fadeIn("slow", function () {
                 console.log("fade done")
             })
+            }else {
+                console.log("not found")
+            }
+            
         });
     </script>
 </body>
