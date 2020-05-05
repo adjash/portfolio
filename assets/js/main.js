@@ -22,7 +22,18 @@ var projects = document.querySelector('#section_1_projects');
 var skills = document.querySelector('#section_2_skills');
 
 window.addEventListener('scroll', function (event) {
-    if(isInViewport(title)){
+    switch (isInViewport(elem)){
+        case title:
+            console.log('title in viewport');
+            break;
+        case projects:
+            console.log('projects in viewport');
+            break;
+        case skills:
+            console.log('skills in viewport');
+    }
+
+    /*if(isInViewport(title)){
         console.log('Title in Viewport')
     }else {
         console.log('title not in viewport')
@@ -38,6 +49,6 @@ window.addEventListener('scroll', function (event) {
         console.log('skills in Viewport')
     }else {
         console.log('skills not in viewport')
-    }
+    }*/
   
 }, false);
