@@ -18,7 +18,7 @@ var isInViewport = function (elem) {
 	);
 };
 
-var findMe = document.querySelector('#find-me');
+var findMe = document.querySelector('#projectb');
 
 window.addEventListener('scroll', function (event) {
 	if (isInViewport(findMe)) {
