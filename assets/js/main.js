@@ -19,6 +19,7 @@ var isInViewport = function (elem) {
 };
 var title = document.querySelector('#section_0_introduction');
 var projects = document.querySelector('#section_1_projects');
+var skills = document.querySelector('#section_2_skills');
 
 window.addEventListener('scroll', function (event) {
     if(isInViewport(title)){
@@ -31,6 +32,12 @@ window.addEventListener('scroll', function (event) {
 		console.log('Projects in Viewport');
 	} else {
     console.log('projects not in viewport');
-  }
+    }
+
+    if(isInViewport(skills)){
+        console.log('skills in Viewport')
+    }else {
+        console.log('skills not in viewport')
+    }
   
 }, false);
