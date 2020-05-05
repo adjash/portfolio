@@ -17,7 +17,7 @@ var isInViewport = function (elem) {
 		distance.right <= (window.innerWidth || document.documentElement.clientWidth)
 	);
 };
-var Title = document.querySelector('#section_0_introduction');
+var title = document.querySelector('#section_0_introduction');
 var projects = document.querySelector('#section_1_projects');
 
 window.addEventListener('scroll', function (event) {
@@ -26,7 +26,7 @@ window.addEventListener('scroll', function (event) {
     }else {
         console.log('title not in viewport')
     }
-    
+
 	if (isInViewport(projects)) {
 		console.log('Projects in Viewport');
 	} else {
