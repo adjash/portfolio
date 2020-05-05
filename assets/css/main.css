@@ -51,3 +51,9 @@ body {
     border-radius: 16px;
     padding:1em;
 }
+#section_0_introduction {
+    height: 100vh;
+}
+#section_1_project {
+    height: 100vh;
+}

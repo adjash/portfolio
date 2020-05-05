@@ -11,32 +11,26 @@ $( document ).ready( () => {
 var isInViewport = function (elem) {
 	var distance = elem.getBoundingClientRect();
 	return (
-		distance.top > 0 &&
-		distance.left > 0 &&
+		distance.top >= 0 &&
+		distance.left >= 0 &&
 		distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
 		distance.right <= (window.innerWidth || document.documentElement.clientWidth)
 	);
 };
-
-var findMe = document.querySelector('#section_1_projects');
+var Title = document.querySelector('#section_0_introduction');
+var projects = document.querySelector('#section_1_projects');
 
 window.addEventListener('scroll', function (event) {
-	if (isInViewport(findMe)) {
-		console.log('In viewport!');
+    if(isInViewport(title)){
+        console.log('Title in Viewport')
+    }else {
+        console.log('title not in viewport')
+    }
+    
+	if (isInViewport(projects)) {
+		console.log('Projects in Viewport');
 	} else {
-    console.log('Nope...');
+    console.log('projects not in viewport');
   }
-}, false);
-
-const isElementXPercentInViewport = function(findMe, percentVisible) {
-    let
-      rect = el.getBoundingClientRect(),
-      windowHeight = (window.innerHeight || document.documentElement.clientHeight);
   
-    return !(
-      Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / +-(rect.height / 1)) * 100)) < percentVisible ||
-      Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
-    )
-  };
-
-console.log(isElementXPercentInViewport)
+}, false);
